@@ -23,7 +23,7 @@ const EditBlogPage = ({ params }: { params: Promise<{ editBlog: string }> }) => 
     const fetchBlogData = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`https://assignment-3-gray-seven.vercel.app/api/blogs/${editBlog}`, {
+        const res = await fetch(`https://portfolio-server-mocha-omega.vercel.app/api/blogs/${editBlog}`, {
           cache: 'no-store',
         });
         const { data: blog } = await res.json();
@@ -54,7 +54,7 @@ const EditBlogPage = ({ params }: { params: Promise<{ editBlog: string }> }) => 
         return;
       }
 
-      const response = await fetch(`https://assignment-3-gray-seven.vercel.app/api/blogs/${editBlog}`, {
+      const response = await fetch(`https://portfolio-server-mocha-omega.vercel.app/api/blogs/${editBlog}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ export default function LoginPage() {
   const onSubmit = async (data: ILoginData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('https://assignment-3-gray-seven.vercel.app/api/auth/login', {
+      const response = await fetch('https://portfolio-server-mocha-omega.vercel.app/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

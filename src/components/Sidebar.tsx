@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaUser, FaCog, FaHome, FaAddressBook } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import { GiSkills } from "react-icons/gi";
 
 const Sidebar = () => {
   return (
@@ -15,31 +16,41 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </Link>
         </li>
+  
         <li>
+          <Link
+            href="/dashboard/skill"
+            className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+          >
+            <GiSkills className="h-5 w-5" />
+            <span>Skills</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/dashboard/skill"
+            className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+          >
+            <FaAddressBook className="h-5 w-5" />
+            <span>Projects</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/dashboard/experience"
+            className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+          >
+            <FaMessage className="h-5 w-5" />
+            <span>Experience</span>
+          </Link>
+        </li>
+         <li>
           <Link
             href="/dashboard/userInfo"
             className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
           >
             <FaUser className="h-5 w-5" />
             <span>User Info</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/dashboard/addBlog"
-            className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
-          >
-            <FaAddressBook className="h-5 w-5" />
-            <span>Add Blog</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/dashboard/messages"
-            className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
-          >
-            <FaMessage className="h-5 w-5" />
-            <span>Client Msg</span>
           </Link>
         </li>
         <li>

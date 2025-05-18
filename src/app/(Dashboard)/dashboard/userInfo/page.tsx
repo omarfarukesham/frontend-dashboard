@@ -20,7 +20,7 @@ export default function UserInfo() {
     const fetchUsers = async () => {
       try {
         const token = sessionStorage.getItem('authToken');
-        const response = await fetch('https://assignment-3-gray-seven.vercel.app/api/user', {
+        const response = await fetch('https://portfolio-server-mocha-omega.vercel.app/api/user', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

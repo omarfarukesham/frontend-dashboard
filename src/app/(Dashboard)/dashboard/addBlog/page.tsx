@@ -32,7 +32,7 @@ export default function AddBlog() {
   
       const { id } = JSON.parse(authUser);
       
-      const response = await fetch('https://assignment-3-gray-seven.vercel.app/api/blogs', {
+      const response = await fetch('https://portfolio-server-mocha-omega.vercel.app/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

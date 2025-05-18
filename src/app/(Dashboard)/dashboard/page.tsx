@@ -27,7 +27,7 @@ const DashboardPage = () => {
   const fetchBlogs = async () => {
     try {
       const token = sessionStorage.getItem('authToken');
-      const response = await fetch('https://assignment-3-gray-seven.vercel.app/api/blogs', {
+      const response = await fetch('https://portfolio-server-mocha-omega.vercel.app/api/blogs', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
