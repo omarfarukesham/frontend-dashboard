@@ -113,7 +113,7 @@ const ExperiencePage = () => {
                   <td className="px-6 py-4 whitespace-nowrap text-center flex justify-center gap-4">
                
                        <Link
-                        href={`/experience/${exp._id}`}
+                        href={`experience/${exp._id}`}
                         className='text-indigo-600 hover:text-indigo-900 mr-3'
                       >
                         <FaEdit className='inline' />

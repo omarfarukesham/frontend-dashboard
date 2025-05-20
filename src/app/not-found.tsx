@@ -10,7 +10,7 @@ const NotFoundPage = () => {
         <p className="text-gray-500 mt-2">
           The page you are looking for might have been removed or is temporarily unavailable.
         </p>
-        <Link href="/" className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+        <Link href="/dashboard" className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
           Go Back to Home
         </Link>
       </div>
